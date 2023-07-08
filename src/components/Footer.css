@@ -1,0 +1,31 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-link {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #0077b5; /* LinkedIn blue */
+}
+
+.social-link:nth-child(2):hover {
+    color: #4078c0; /* GitHub blue */
+}
+

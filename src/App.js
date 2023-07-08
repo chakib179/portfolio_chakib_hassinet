@@ -1,24 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SurMoi from "./pages/SurMoi/SurMoi";
+import Projets from './pages/Projets/Projets';
+import Projet1 from "./pages/Projet1/Projet1";
+import ProjectRestaurant from "./pages/ProjectRestaurant/ProjectRestaurant";
+import PageContact from "./pages/PageContact/PageContact";
+import CreateTestimony from "./pages/Temoignage/CreateTestimony";
+import TestimonyList from "./pages/Temoignage/TestimonyList";
+import Header from "./components/Navbar";
+import Footer from "./components/Footer";
+import React, { useState } from "react";
 
 function App() {
+  const [testimonies, setTestimonies] = useState([]);
+
+  const handleTestimonySubmit = (testimony) => {
+    setTestimonies([...testimonies, testimony]);
+  };
+
+  const handleTestimonyDelete = (indice) => {
+    setTestimonies(testimonies.filter((_, i) => i !== indice));
+  };
+
+  const handleTestimonyUpdate = (indice, updatedTestimony) => {
+    setTestimonies(testimonies.map((testimony, i) => i === indice ? updatedTestimony : testimony));
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<SurMoi />} />
+        <Route path="/Projets" element={<Projets />} />
+        <Route path="/Projet1" element={<Projet1 />} />
+        <Route path="/ProjectRestaurant" element={<ProjectRestaurant />} />
+        <Route path="/contact" element={<PageContact />} />
+        <Route 
+          path="/creer-temoignage" 
+          element={<CreateTestimony onTestimonySubmit={handleTestimonySubmit} />} 
+        />
+        <Route 
+          path="/liste-temoignages" 
+          element={<TestimonyList 
+            testimonies={testimonies} 
+            onTestimonyDelete={handleTestimonyDelete} 
+            onTestimonyUpdate={handleTestimonyUpdate} 
+          />} 
+        />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
