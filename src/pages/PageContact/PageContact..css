@@ -1,0 +1,55 @@
+
+.PageContact {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .PageContact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .PageContact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px; 
+    margin: 0 auto;
+  }
+  
+  .PageContact label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem; 
+  }
+  
+  .PageContact input,
+  .PageContact select,
+  .PageContact textarea {
+    padding: 1.5rem; 
+    font-size: 1.1rem; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .PageContact button {
+    padding: 0.75rem 1.5rem; 
+    font-size: 1.2rem; 
+    background-color: #0b2846;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .PageContact button:hover {
+    background-color: #0056b3;
+  }
+  
+  .PageContact .error {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+ 
+  
