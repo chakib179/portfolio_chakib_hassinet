@@ -1,0 +1,57 @@
+
+.CreateTestimony {
+    margin-top: 1.8rem;
+      text-align: center;
+      padding: 2rem;
+    }
+    
+    .CreateTestimony h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .CreateTestimony form {
+      margin-top: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      max-width: 800px; 
+      margin: 0 auto;
+    }
+    
+    .CreateTestimony label {
+      margin-top: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5rem; 
+    }
+    
+    .CreateTestimony input,
+    .CreateTestimony textarea {
+  
+      padding: 1.5rem; 
+      font-size: 1.1rem; 
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .CreateTestimony button {
+      padding: 0.75rem 1.5rem; 
+      font-size: 1.2rem; 
+      background-color: #0b2846;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 1.8rem;
+    }
+    
+    .CreateTestimony button:hover {
+      background-color: #0056b3;
+    }
+    
+    .CreateTestimony .error {
+      color: red;
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+    }
+    
