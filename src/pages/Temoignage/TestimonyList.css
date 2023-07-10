@@ -1,0 +1,83 @@
+.TestimonyList {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  
+  }
+  
+  .TestimonyList h1 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top: 50px;
+  
+  }
+  
+  .TestimonyList ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .TestimonyList li {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  .TestimonyList form {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .TestimonyList input,
+  .TestimonyList textarea {
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .TestimonyList h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .TestimonyList p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .TestimonyList button {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    margin-right: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .TestimonyList button:hover {
+    opacity: 0.8;
+  }
+  
+  .TestimonyList .edit-btn {
+    background-color: #0b2846;
+    color: #fff;
+  }
+  
+  .TestimonyList .delete-btn {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  
+  .TestimonyList .error {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
