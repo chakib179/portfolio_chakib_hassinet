@@ -29,13 +29,13 @@ function FormContact() {
   isFormValid();
   }
 
-  
+  // fonction pour les validation des champs
   
   function validateForm(field, value) {
     switch (field) {
        
         case 'nom':
-            if (!nomRegex.test(value)) setErrors(prev => ({ ...prev, [field]: `${field} n'est pas valide !` }))
+            if (!nomRegex.test(value)) setErrors(prev => ({ ...prev, [field]: `${field} ne doit contenir que des lettres et des espaces` }))
             else setErrors(prev => ({ ...prev, [field]: '' }))
             break
         case 'email':
