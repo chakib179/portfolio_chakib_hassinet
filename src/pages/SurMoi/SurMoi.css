@@ -1,0 +1,67 @@
+.SurMoi-page{
+    background-color: #f9f9f9;
+  padding: 100px 0;
+  }
+  
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .profile-info {
+    text-align: center;
+  }
+  
+  .profile-name {
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .profile-description {
+    color: #666;
+  }
+  
+  .profile-skills-heading,
+  .profile-languages-heading {
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+  
+  .profile-skills-list,
+  .profile-languages-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .profile-skills-list li,
+  .profile-languages-list li {
+    background-color: #f3f3f3;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .profile-pic-container {
+    border: 5px solid #333;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .profile-pic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  
+  
