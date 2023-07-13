@@ -52,6 +52,7 @@ function FormContact() {
             if (value.length<20) setErrors(prev => ({ ...prev, [field]: `Entrer le message ! Le message doit contenir au moin 20 caracteres ` }))
             else setErrors(prev => ({ ...prev, [field]: '' }))
             break
+            
         default:
             break
     }
